@@ -36,7 +36,7 @@ var patterns = [[0]
 			  , [9, 5, 7, 1]
 			  , [8, 3, 1]
 			  , [3, 9, 6, 3]
-			  , [1, 3, 9, 5]
+			  , [1, 3, 9]
 			  , [1, 8, 6]
 			  , [2, 6]
 			  , [6, 4, 5, 3]]; // Mesures faites pour durer 4 temps
@@ -86,7 +86,7 @@ io.on('connection', function(socket) {
 	});
 
 	socket.on('ready', function(username) {
-		if ( state[socket.id] !== 'ready' ) {
+		if ( state[socket.id] === 'pause' ) {
 			state[socket.id] = 'ready';
 			socket.emit('chat', "You are ready.");
 			var text = '<b>' + username + '</b> is ready';
