@@ -1,0 +1,13 @@
+{
+ "name"	       : "RythmeChallenge",
+ "version"     : "0.1.0",
+ "author"      : "Erwan et Quentin",
+ "description" : "A rythme game",
+ "licence"     : "MIT",
+ "dependencies": {
+   "connect"   : "3.6.0",
+   "socket.io" : "1.7.3",
+   "urlrouter" : "0.5.4",
+   "serve-static" : "1.12.1"
+  }
+}
