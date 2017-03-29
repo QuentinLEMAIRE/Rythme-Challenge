@@ -238,7 +238,6 @@
             stop();
             clearTimeout(timer2);
             etat_jeu = false;
-            $("#indication").html("Cliquez sur Prêt pour démarrer.")
         }
 
 
@@ -327,6 +326,7 @@
         function fin(){
             var score_f = eval_score(partition, taptap);
             console.log(score_f);
+            $("#indication").html("Cliquez sur Prêt pour démarrer.");
             socket.emit('game_end',score_f);
         }
 
