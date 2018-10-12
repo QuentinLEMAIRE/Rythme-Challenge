@@ -1,3 +1,3 @@
-# Rythme-Challenge
+# Rhythm Challenge Game
 
-Simple multiplayer rythm game with web technologies.
+Simple multiplayer rhythm game developed in JavaScript.
